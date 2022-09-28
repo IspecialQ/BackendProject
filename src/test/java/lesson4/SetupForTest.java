@@ -12,8 +12,8 @@ import java.nio.file.FileSystems;
 public class SetupForTest {
 
     @BeforeAll
-    static void beforeAll() {
-        RestAssured.baseURI = "https://api.spoonacular.com";
+        static void beforeAll() {
+            RestAssured.baseURI = "https://api.spoonacular.com";
         RestAssured.requestSpecification = new RequestSpecBuilder()
                 .addQueryParam("apiKey", "0970f5c615f14a2a91942df5a213e41c")
                 .build();
